@@ -6,19 +6,22 @@ var download = require('download-file');
 // use download-file to save the image from the URL
 // finally, use wallpaper to set your mac wallpaper to the random image
 
-
+var options = {
+  directory: './img/',
+  filename: 'randomDog.jpg'
+};
 
 axios.get('https://dog.ceo/api/breeds/image/random')
   .then(data => {
-    var image = data.data.message;
-    var options = {
-      directory: './img/',
-      filename: 'randomDog.jpg'
-    };
-    // if successful, download the image to the ./img/ folder
-    download(image, options, function (err) {
-      if (err) throw err
-      console.log('Woof!');
-      wallpaper.set(options.filename);
+    var img = data.data.message;
+    download(img, options, function (err) {
+      if (!err) {
+        (async () => {
+          await wallpaper.set(img);
+        })
+      } else {
+        console.log(err);
+      }
     })
   })
+
