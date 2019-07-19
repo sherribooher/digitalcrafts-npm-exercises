@@ -53,6 +53,6 @@ instead of turning on that "let less secure apps use your account" setting, crea
  
 
 **Bonus: Any module**
-Find any npm module and learn how to use it by reading its documentation. You can do a google search for something you might be interested in and add "npm" to the search term. Or you can look through this list for some inspiration.
+Find any npm module and learn how to use it by reading its documentation. You can do a google search for something you might be interested in and add "npm" to the search term. Or you can look through [this list](https://github.com/sindresorhus/awesome-nodejs) for some inspiration.
 
 
