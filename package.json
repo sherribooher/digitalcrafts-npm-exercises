@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/sherribooher/digitalcrafts-npm-exercises#readme",
   "dependencies": {
-    "lodash": "^4.17.14"
+    "axios": "^0.19.0",
+    "download-file": "^0.1.5",
+    "lodash": "^4.17.14",
+    "wallpaper": "^4.4.1"
   }
 }
